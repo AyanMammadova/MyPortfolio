@@ -1,4 +1,9 @@
 import React from 'react'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, FreeMode, Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/grid';
+import 'swiper/css/pagination';
 
 function About() {
     return (
@@ -13,15 +18,16 @@ function About() {
                     where I’m expanding my knowledge of modern development practices and innovative web technologies.
 
                     I enjoy building responsive, accessible websites and applications that provide seamless user experiences.
-                    
+
                 </p>
-                <p className='text-[1.4em] text-purple-500 px-[10px]'>Here’s a quick look at my skillset:</p>
-                <div className='text-[1.3em]  p-[20px] flex-wrap gap-[20px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3'>
-                    <div data-aos="fade-up" className='flex flex-col gap-[5px] text-center mx-auto  w-[90%] sm:w-[280px] '>
+                <p className='text-[1.4em] pb-[20px] text-purple-500 px-[10px]'>Here’s a quick look at my skillset:</p>
+                <div className=''>
+                    {/* <div data-aos="fade-up" className='flex flex-col gap-[5px] text-center mx-auto  w-[90%] sm:w-[280px] '>
                         <span className='text-purple-400'>Core  Technologies  </span>
                         <p className='border-[1px] border-white hover:bg-white/15 transition-all duration-200 cursor-pointer  rounded-lg '>HTML</p>
                         <p className='border-[1px] border-white hover:bg-white/15 transition-all duration-200 cursor-pointer  rounded-lg'>CSS</p>
-                        <p className='border-[1px] border-white hover:bg-white/15 transition-all duration-200 cursor-pointer  rounded-lg'>JS</p>
+                        <p className='border-[1px] border-white hover:bg-white/15 transition-all duration-200 cursor-pointer  rounded-lg'>JavaScript</p>
+                        <p className='border-[1px] border-white hover:bg-white/15 transition-all duration-200 cursor-pointer  rounded-lg'>TypeScript</p>
                     </div>
                     <div data-aos="fade-up" className='flex flex-col gap-[5px] text-center mx-auto  w-[90%] sm:w-[280px] '>
                         <span className='text-purple-400'>JS Libraries & Frameworks </span>
@@ -48,13 +54,95 @@ function About() {
                         <p className='border-[1px] border-white hover:bg-white/15 transition-all duration-200 cursor-pointer  rounded-lg'>Netlify</p>
                         <p className='border-[1px] border-white hover:bg-white/15 transition-all duration-200 cursor-pointer  rounded-lg'>GitHub Actions</p>
                     </div>
-                    <div data-aos="fade-right" className='flex flex-col gap-[5px] text-center mx-auto  w-[90%] sm:w-[280px] '>
+                    <div data-aos="fade-up" className='flex flex-col gap-[5px] text-center mx-auto  w-[90%] sm:w-[280px] '>
                         <span className='text-purple-400'>Version   Control </span>
                         <p className='border-[1px] border-white hover:bg-white/15 transition-all duration-200 cursor-pointer  rounded-lg '>Git</p>
                         <p className='border-[1px] border-white hover:bg-white/15 transition-all duration-200 cursor-pointer  rounded-lg'>GitHub</p>
                     </div>
-                    
-                   
+                     */}
+                    <Swiper
+                        slidesPerView={3}
+                        spaceBetween={30}
+                        freeMode={true}
+                        pagination={{
+                            clickable: true,
+                        }}
+                        autoplay={{
+                            delay: 3000, 
+                            pauseOnMouseEnter:true
+                          }}
+                        modules={[FreeMode, Pagination,Autoplay]}
+                        className="mySwiper"
+                    >
+                        {/* Core Technologies */}
+                        <SwiperSlide className='w-[300px] rounded-lg py-[10px] bg-[#C084FC] text-black'>
+                            <div className=''>HTML</div>
+                        </SwiperSlide>
+                        <SwiperSlide className='w-[300px] rounded-lg py-[10px] bg-[#C084FC] text-black'>
+                            <div className=''>CSS</div>
+                        </SwiperSlide>
+                        <SwiperSlide className='w-[300px] rounded-lg py-[10px] bg-[#C084FC] text-black'>
+                            <div className=''>JavaScript</div>
+                        </SwiperSlide>
+                        <SwiperSlide className='w-[300px] rounded-lg py-[10px] bg-[#C084FC] text-black'>
+                            <div className=''>TypeScript</div>
+                        </SwiperSlide>
+
+                        {/* JS Libraries & Frameworks */}
+                        <SwiperSlide className='w-[300px] rounded-lg py-[10px] bg-[#C084FC] text-black'>
+                            <div className=''>React.js</div>
+                        </SwiperSlide>
+                        <SwiperSlide className='w-[300px] rounded-lg py-[10px] bg-[#C084FC] text-black'>
+                            <div className=''>React Router</div>
+                        </SwiperSlide>
+                        <SwiperSlide className='w-[300px] rounded-lg py-[10px] bg-[#C084FC] text-black'>
+                            <div className=''>Context API</div>
+                        </SwiperSlide>
+
+                        {/* Visual Design */}
+                        <SwiperSlide className='w-[300px] rounded-lg py-[10px] bg-[#C084FC] text-black'>
+                            <div className=''>CSS3</div>
+                        </SwiperSlide>
+                        <SwiperSlide className='w-[300px] rounded-lg py-[10px] bg-[#C084FC] text-black'>
+                            <div className=''>Tailwind CSS</div>
+                        </SwiperSlide>
+                        <SwiperSlide className='w-[300px] rounded-lg py-[10px] bg-[#C084FC] text-black'>
+                            <div className=''>Bootstrap</div>
+                        </SwiperSlide>
+
+                        {/* API Integration */}
+                        <SwiperSlide className='w-[300px] rounded-lg py-[10px] bg-[#C084FC] text-black'>
+                            <div className=''>Fetch API</div>
+                        </SwiperSlide>
+                        <SwiperSlide className='w-[300px] rounded-lg py-[10px] bg-[#C084FC] text-black'>
+                            <div className=''>RESTful APIs</div>
+                        </SwiperSlide>
+                        <SwiperSlide className='w-[300px] rounded-lg py-[10px] bg-[#C084FC] text-black'>
+                            <div className=''>CRUD Operations</div>
+                        </SwiperSlide>
+
+                        {/* Deployment */}
+                        <SwiperSlide className='w-[300px] rounded-lg py-[10px] bg-[#C084FC] text-black'>
+                            <div className=''>Vercel</div>
+                        </SwiperSlide>
+                        <SwiperSlide className='w-[300px] rounded-lg py-[10px] bg-[#C084FC] text-black'>
+                            <div className=''>Netlify</div>
+                        </SwiperSlide>
+                        <SwiperSlide className='w-[300px] rounded-lg py-[10px] bg-[#C084FC] text-black'>
+                            <div className=''>GitHub Actions</div>
+                        </SwiperSlide>
+
+                        {/* Version Control */}
+                        <SwiperSlide className='w-[300px] rounded-lg py-[10px] bg-[#C084FC] text-black'>
+                            <div className=''>Git</div>
+                        </SwiperSlide>
+                        <SwiperSlide className='w-[300px] rounded-lg py-[10px] bg-[#C084FC] text-black'>
+                            <div className=''>GitHub</div>
+                        </SwiperSlide>
+                    </Swiper>
+
+
+
                 </div>
             </div>
         </>

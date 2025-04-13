@@ -36,13 +36,13 @@ function Header() {
         <div className="w-full relative  text-white  "><span className='text-[#060822]'>.</span>
 
           <div className='flex  justify-between w-[95%]  border-[3px]  border-white bg-black m-[10px] p-[30px] rounded-3xl  h-[60px] items-center mx-[auto]'>
-            <div>
+            {/* <div>
               <Link to={'/'} onClick={() => { scrollToTop() }} className='h-[30px]'>
                 <img className='h-[50px]' src="/img/flaticons/galaxy.png" alt="" />
-              </Link>
-            </div>
+              </Link> 
+            </div> */}
             <div>
-              <ul className='text-[25px]  bp1000:flex hidden font-cormorant text-white'>
+              <ul className='text-[20px]  bp1000:flex hidden font-josefin  text-white'>
                 <a
                   onClick={() => { setActiveLink('home') }}
                   href='#home' className="group relative w-max   px-[6px] mx-[3px] cursor-pointer">
