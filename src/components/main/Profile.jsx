@@ -8,7 +8,7 @@ function Profile() {
     return (
         <div className='bp900:flex overflow-y-hidden font-josefin  text-white w-[95%] bg-black  border-[3px] border-white m-[40px] p-[10px] md:p-[40px] rounded-3xl   items-center mx-[auto]'>
 
-            <div data-aos="fade-left" className='z-10 text-center'>
+            <div className='z-10 text-center mx-auto'>
                 <p className='text-[1.5em] md:text-[2em] '>Hi,I'm <span className='text-purple-400'>Ayan</span> Mammadova</p>
                 <p className='text-[1.2em] md:text-[1.7em] text-purple-400'>Front-end Developer</p>
                 <p className='text-[1em] py-[20px] text-center'>

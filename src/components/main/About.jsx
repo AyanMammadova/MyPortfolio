@@ -6,6 +6,7 @@ import 'swiper/css/grid';
 import 'swiper/css/pagination';
 
 function About() {
+    console.log(false + "5")
     return (
         <>
             <div className='relative overflow-y-hidden'>
