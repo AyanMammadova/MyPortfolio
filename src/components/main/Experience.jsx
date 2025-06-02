@@ -1,9 +1,6 @@
-import React from 'react'
 import { BiHomeHeart } from 'react-icons/bi';
-import { FaArrowAltCircleDown, FaHandHoldingHeart, FaSchool, FaStar } from 'react-icons/fa'
-import { FaScaleBalanced } from 'react-icons/fa6'
+import { FaCode, FaHandHoldingHeart } from 'react-icons/fa'
 import { GiKnockedOutStars } from 'react-icons/gi';
-import { LiaUniversitySolid } from 'react-icons/lia';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
 import 'react-vertical-timeline-component/style.min.css';
 
@@ -11,7 +8,7 @@ function Experience() {
     return (
         <>
             <div className='relative overflow-y-hidden'>
-                <img  className='absolute top-[-70px] h-[45px] right-[40px]' src="/img/flaticons/falling-star.png" alt="" />
+                <img className='absolute top-[-70px] h-[45px] right-[40px]' src="/img/flaticons/falling-star.png" alt="" />
                 <p className='text-center text-[2.5em] text-white'>Experience</p>
             </div>
             <div className='font-josefin  overflow-y-hidden  text-white w-[95%] bg-black border-[3px] border-white m-[40px] p-[40px] rounded-3xl   items-center mx-[auto]'>
@@ -21,6 +18,18 @@ function Experience() {
                         iconStyle={{ background: 'rgb(0, 25, 120)', width: '35px', height: '35px', margin: 'auto -17px', color: '#fff' }}
                         icon={<GiKnockedOutStars />}
                     />
+                    <VerticalTimelineElement
+                        className="vertical-timeline-element--work"
+                        contentStyle={{ background: 'rgb(20, 95, 190)', color: '#fff' }}
+                        contentArrowStyle={{ borderRight: '7px solid  rgb(20, 95, 190)' }}
+                        date="Feb 2025 - May 2025"
+                        iconStyle={{ background: 'rgb(20, 95, 190)', color: '#fff' }}
+                        icon={<FaCode />}
+                    >
+                        <h3 className="vertical-timeline-element-title">Millisoft</h3>
+                        <h4 className="vertical-timeline-element-subtitle">React Developer Intern</h4>
+
+                    </VerticalTimelineElement>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
                         contentStyle={{ background: 'rgb(20, 95, 190)', color: '#fff' }}
@@ -46,6 +55,7 @@ function Experience() {
                         <h4 className="vertical-timeline-element-subtitle">Master 1 volunteer</h4>
 
                     </VerticalTimelineElement>
+
 
                     <VerticalTimelineElement
                         iconStyle={{ background: 'rgb(0, 25, 120)', width: '35px', height: '35px', margin: 'auto -17px', color: '#fff' }}
