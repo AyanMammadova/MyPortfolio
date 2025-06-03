@@ -22,7 +22,7 @@ function About() {
 
                 </p>
                 <p className='text-[1.4em] pb-[20px] text-purple-500 px-[10px]'>Here’s a quick look at my skillset:</p>
-                <div className=''>
+                <div className='p-[20px]'>
                     {/* <div data-aos="fade-up" className='flex flex-col gap-[5px] text-center mx-auto  w-[90%] sm:w-[280px] '>
                         <span className='text-purple-400'>Core  Technologies  </span>
                         <p className='border-[1px] border-white hover:bg-white/15 transition-all duration-200 cursor-pointer  rounded-lg '>HTML</p>
@@ -63,16 +63,24 @@ function About() {
                      */}
                     <Swiper
                         slidesPerView={3}
+                        breakpoints={{
+                            0: {
+                                slidesPerView: 2,
+                            },
+                            640: {
+                                slidesPerView: 3, 
+                            },
+                        }}
                         spaceBetween={30}
                         freeMode={true}
                         pagination={{
                             clickable: true,
                         }}
                         autoplay={{
-                            delay: 3000, 
-                            pauseOnMouseEnter:true
-                          }}
-                        modules={[FreeMode, Pagination,Autoplay]}
+                            delay: 3000,
+                            pauseOnMouseEnter: true
+                        }}
+                        modules={[FreeMode, Pagination, Autoplay]}
                         className="mySwiper"
                     >
                         {/* Core Technologies */}
