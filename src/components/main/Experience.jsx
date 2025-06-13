@@ -1,6 +1,7 @@
 import { BiHomeHeart } from 'react-icons/bi';
 import { FaCode, FaHandHoldingHeart } from 'react-icons/fa'
 import { GiKnockedOutStars } from 'react-icons/gi';
+import { MdOutlineWork } from 'react-icons/md';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
 import 'react-vertical-timeline-component/style.min.css';
 
@@ -22,7 +23,19 @@ function Experience() {
                         className="vertical-timeline-element--work"
                         contentStyle={{ background: 'rgb(20, 95, 190)', color: '#fff' }}
                         contentArrowStyle={{ borderRight: '7px solid  rgb(20, 95, 190)' }}
-                        date="Feb 2025 - May 2025"
+                        date="Jun 2025 - Current"
+                        iconStyle={{ background: 'rgb(20, 95, 190)', color: '#fff' }}
+                        icon={<MdOutlineWork />}
+                    >
+                        <h3 className="vertical-timeline-element-title">Millisoft</h3>
+                        <h4 className="vertical-timeline-element-subtitle">Front-end Developer</h4>
+
+                    </VerticalTimelineElement>
+                    <VerticalTimelineElement
+                        className="vertical-timeline-element--work"
+                        contentStyle={{ background: 'rgb(20, 95, 190)', color: '#fff' }}
+                        contentArrowStyle={{ borderRight: '7px solid  rgb(20, 95, 190)' }}
+                        date="Feb 2025 - Jun 2025"
                         iconStyle={{ background: 'rgb(20, 95, 190)', color: '#fff' }}
                         icon={<FaCode />}
                     >
