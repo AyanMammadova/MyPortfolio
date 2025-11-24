@@ -1,5 +1,4 @@
-import React, { useState } from 'react'
-import { CiApple } from 'react-icons/ci';
+
 import { FaCss3Alt, FaGithub, FaHtml5, FaJsSquare, FaReact } from 'react-icons/fa';
 import { GiClothes } from 'react-icons/gi';
 import { IoIosLink } from 'react-icons/io';
@@ -39,7 +38,7 @@ function Projects() {
                             <SiNetlify />
                             <FaJsSquare />
                         </div>
-                        <p className='text-purple-300 inline'>Lunaria is a modern e-commerce site for men's and women's clothing, featuring user authentication, a dynamic product catalog from an API, a shopping basket, and a streamlined checkout process.
+                        <p className='text-purple-300 inline'>Lunaria is a modern e-commerce site for men`s and women`s clothing, featuring user authentication, a dynamic product catalog from an API, a shopping basket, and a streamlined checkout process.
                             <GiClothes className='inline text-white' />
                         </p>
                         <div className='flex gap-[10px]   pt-[17px] mt-[10px]'>

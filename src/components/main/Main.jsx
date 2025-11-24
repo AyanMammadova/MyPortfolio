@@ -1,13 +1,13 @@
 import Aos from 'aos';
-import React, { useEffect } from 'react'
+import  { useEffect } from 'react'
 import 'aos/dist/aos.css';
 import Skills from './Skills';
 import Contact from './Contact';
 import Education from './Education';
 import Experience from './Experience';
-import Profile from './Profile';
 import About from './About';
 import Projects from './Projects';
+import Profile from './Profile';
 
 function Main() {
   useEffect(() => {
@@ -24,6 +24,7 @@ function Main() {
         <section id="home" className='pt-[140px]'>
           <Profile />
         </section>
+         
         <section id='about' className='pt-[50px]'>
           <About />
         </section>
@@ -42,6 +43,7 @@ function Main() {
         <section id="contact" className='pt-[50px]'>
           <Contact />
         </section>
+        
       </main>
 
 

@@ -1,6 +1,4 @@
-import React from 'react'
-import { FaArrowAltCircleDown, FaSchool, FaStar } from 'react-icons/fa'
-import { FaScaleBalanced } from 'react-icons/fa6'
+
 import { GiGraduateCap, GiKnockedOutStars } from 'react-icons/gi';
 import { LiaUniversitySolid } from 'react-icons/lia';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
