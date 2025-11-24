@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import  { useState } from 'react'
 import { FaGithub, FaLinkedin, FaPhoneAlt } from 'react-icons/fa'
 import { MdLocationOn, MdOutlineEmail } from 'react-icons/md'
 import { Link } from 'react-router-dom'
@@ -37,13 +37,13 @@ function Contact() {
   function handleSubmit(event) {
     const templateParams = {
       recipient: 'Ayan Mammadova',
-      sender_name: formvalues.name,   
-      sender_email: formvalues.email,      
-      sender_message: formvalues.message,      
+      name: formvalues.name,   
+      email: formvalues.email,      
+      message: formvalues.message,      
     }
     event.preventDefault()
     if (!errors.name && !errors.email && !errors.message && formvalues.message.trim().length > 1 && formvalues.name.trim().length > 1 && formvalues.email.trim().length > 1) {
-      emailjs.send('service_stse3ai', 'template_fle15gf', templateParams, 'Zr2DliAmyduX3c6LH')
+      emailjs.send('service_jye2g89', 'template_4iv486n', templateParams, 'qIzKFKRsoOGi2qDKA')
       alert('submitted')
     }
     // emailjs.sendForm('service_id','template_id',e.target,'public_key')
@@ -92,13 +92,13 @@ function Contact() {
                   <span className='cursor-pointer'>+994 70 257 10 65</span>
                 </Link>
 
-                <Link to={'mailto:ayan.md@div.edu.az'}
+                <Link to={'mailto:ayan.mammadova900@gmail.com'}
                   target='blank'
                   title='Click to Send me message' className="flex  gap-[10px] items-center">
                   <div className='border-[1px] border-white  rounded-full p-[5px]'>
                     <MdOutlineEmail />
                   </div>
-                  <span>ayan.md@div.edu.az</span>
+                  <span>ayan.mammadova900@gmail.com</span>
                 </Link>
                 <p className="flex gap-[10px] items-center ">
                   <div className='border-[1px] border-white  rounded-full p-[5px]'>

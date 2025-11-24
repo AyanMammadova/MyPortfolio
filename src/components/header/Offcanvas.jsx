@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { IoMdClose } from 'react-icons/io';
-import { useLocation } from 'react-router-dom';
 
 function Offcanvas({ setShowCanvas }) {
   const [activeLink, setActiveLink] = useState('home')
