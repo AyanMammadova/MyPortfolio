@@ -26,7 +26,7 @@ function Projects() {
                                 <div className='flex h-[300px] justify-center items-center'><IoIosLink />Go to site</div>
                             </Link>
                         </div>
-                        <div className='flex gap-[1px] sm:min-h-[300px]'>
+                        <div className='flex gap-[1px] sm:min-h-[300px] max-h-[430px]'>
                             <img className='group-hover:scale-105 w-[33%] object-cover transition-all duration-300 ' src="/img/projectimgs/mobil0.png" alt="" />
                             <img className='group-hover:scale-105 w-[33%] object-cover transition-all duration-300 ' src="/img/projectimgs/mobil1.png" alt="" />
                             <img className='group-hover:scale-105 w-[33%] object-cover transition-all duration-300 ' src="/img/projectimgs/mobil2.png" alt="" />
