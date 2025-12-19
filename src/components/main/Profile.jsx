@@ -45,8 +45,8 @@ function Profile() {
         <div className="mt-[10px]">
           <button className="relative overflow-hidden px-6 py-2 rounded-md border border-white text-white group">
             <a
-              href="/Ayan_Mammadova_Cv.pdf"
-              download="Ayan_Mammadova_Cv.pdf"
+              href="/resume.pdf"
+              download="resume.pdf"
               className="relative  z-10 transition-colors duration-300 group-hover:text-black"
             >
               Download My CV
