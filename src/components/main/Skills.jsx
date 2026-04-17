@@ -19,6 +19,8 @@ import {
   FaJsSquare,
   FaReact,
 } from "react-icons/fa";
+import { SiExpo } from "react-icons/si";
+import tanstackLogo from "../../assets/image.png";
 
 function Skills() {
   return (
@@ -99,6 +101,14 @@ function Skills() {
           </div>
           <div
             data-aos="fade-up"
+            data-aos-delay="500"
+            className="cursor-pointer flex flex-col items-center justify-center"
+          >
+            <SiExpo className="text-[3em] bp900:text-[4em] text-white hover:scale-125 transition-all duration-200" />
+            <p className="text-center">Expo</p>
+          </div>
+          <div
+            data-aos="fade-up"
             data-aos-delay="550"
             className="cursor-pointer flex flex-col items-center justify-center"
           >
@@ -122,6 +132,17 @@ function Skills() {
             <SiReactquery className="text-[3em] bp900:text-[4em] text-[#FF4154] hover:scale-125 transition-all duration-200" />
             <p className="text-center">React Query</p>
           </div>
+
+          {/* <div
+            data-aos="fade-up"
+            data-aos-delay="580"
+            className="cursor-pointer flex flex-col items-center justify-center"
+          >
+            <SiTanstack className="text-[3em] bp900:text-[4em] text-[#FF4154] hover:scale-125 transition-all duration-200" />
+
+            <p className="text-center">Tanstack</p>
+          </div> */}
+
 
           <div
             data-aos="fade-up"
@@ -150,7 +171,7 @@ function Skills() {
             <p className="text-center">Figma</p>
           </div>
 
-       
+
           <div
             data-aos="fade-up"
             data-aos-delay="740"

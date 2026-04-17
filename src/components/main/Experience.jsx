@@ -35,7 +35,7 @@ function Experience() {
             className="vertical-timeline-element--work"
             contentStyle={{ background: "rgb(20, 95, 190)", color: "#fff" }}
             contentArrowStyle={{ borderRight: "7px solid  rgb(20, 95, 190)" }}
-            date="Jun 2025 - Current"
+            date="Jun 2025 - Apr 2026"
             iconStyle={{ background: "rgb(20, 95, 190)", color: "#fff" }}
             icon={<MdOutlineWork />}
           >

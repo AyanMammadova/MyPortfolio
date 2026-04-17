@@ -43,16 +43,24 @@ function Profile() {
           </Link>
         </div>
         <div className="mt-[10px]">
-          <button className="relative overflow-hidden px-6 py-2 rounded-md border border-white text-white group">
-            <a
-              href="/resume.pdf"
-              download="resume.pdf"
-              className="relative  z-10 transition-colors duration-300 group-hover:text-black"
-            >
-              Download My CV
-            </a>
-            <span className="absolute left-0 bottom-0 h-0 w-full bg-white group-hover:h-full transition-all duration-300 z-0"></span>
-          </button>
+          <a
+            href="/resume.pdf"
+            download="resume.pdf"
+            className="relative  z-10 transition-colors duration-300 group-hover:text-black"
+          >
+            <button className="relative overflow-hidden px-6 py-2 rounded-md border border-white text-white group">
+
+              <a
+                href="/resume.pdf"
+                download="resume.pdf"
+                className="relative  z-10 transition-colors duration-300 group-hover:text-black"
+              >
+                Download My CV
+              </a>
+
+              <span className="absolute left-0 bottom-0 h-0 w-full bg-white group-hover:h-full transition-all duration-300 z-0"></span>
+            </button>
+          </a>
         </div>
       </div>
     </div>
